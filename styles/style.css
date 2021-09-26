@@ -9,7 +9,7 @@
 body {
   padding: 5vh 15vw;
   background-color: #161623;
-  background-image: url("emojiBG2.jpg");
+  background-image: url("../emojiBG2.jpg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
