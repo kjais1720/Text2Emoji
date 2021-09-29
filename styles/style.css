@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&fmaily=Montserrat+Alternates&display=swap");
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -7,20 +7,9 @@
 }
 
 body {
-  padding: 5vh 15vw;
-  background-color: hsl(240, 23%, 11%);
-  background-image: url("../emojiBg2.jpg");
+  background-color: #161623;
+  background-image: url("../images/emojiBG2.jpg");
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -45,12 +34,11 @@ body {
   border-radius: 2cm;
 }
 
-/* Handle on hover */
 main {
+  margin: 5vh 5vw;
   position: relative;
   z-index: 100;
   padding: 5vw;
-  width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -121,6 +109,61 @@ img:nth-child(2) {
 img:nth-child(3) {
   top: 35%;
   left: -14%;
+}
+
+footer {
+  min-height: 25vh;
+  position: relative;
+  font-family: 'Montseerrat Alternates',serif;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #008080;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+footer a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #0f1657;
+}
+
+#copyright {
+  font-size: 1rem;
+}
+
+#copyright a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #0f1657;
+}
+
+#copyright a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #008080;
 }
 
 @media (max-width: 600px) {
