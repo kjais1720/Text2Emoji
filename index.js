@@ -16,7 +16,9 @@ function fetchData(){
         })
         .catch(err =>{
             console.log(err);
-            alert("Ther's an error, please retry, if the error persists, retry after some time")
+            if(err.code === 429){
+                alert("The maximum limit of API requests per hour has crossed, please try after some time");
+            } else alert("Ther's an error, please retry, if the error persists, retry after some time");
         });
 
     }
